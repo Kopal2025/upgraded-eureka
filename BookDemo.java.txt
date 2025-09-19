@@ -1,0 +1,24 @@
+class Book{
+string title;
+string author;
+double price;
+}
+
+Book(string title , string author , double price){
+this.title = title;
+this.author = author;
+this.price = price;
+}
+
+void display(){
+System.out.println("Title: " + title + " Author: " + author + " Price: " + price);
+}
+
+public class BookDemo{
+public static void main(String[] args){
+Book b1 = new Book("The Alchemist", "Paulo Coelho", 399.0);
+Book b2 = new Book("Atomic Habits", "James Clear", 499.0);
+b1.displayDetails();
+b2.displayDetails();
+}
+}
